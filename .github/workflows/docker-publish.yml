@@ -95,4 +95,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Teste de container
-        run: docker run ghcr.io/advanced-cicd-3/advanced-cicd-3:master
+        run: docker run ghcr.io/advanced-cicd-3/advanced-cicd-3:master | grep container
