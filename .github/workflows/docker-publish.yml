@@ -95,4 +95,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Teste de container
-        run: docker run ghcr.io/pehpaiva/${{ env.IMAGE_NAME }} | grep container
+        run: docker run ghcr.io/pehpaiva/advanced-cicd-3 | grep container
