@@ -95,4 +95,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Teste de container
-        run: sudo docker run ghcr.io/pehpaiva/advanced-cicd-3:master
+        run: docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:master
