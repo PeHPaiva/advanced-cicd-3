@@ -28,7 +28,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # Install the cosign tool except on PR
       # https://github.com/sigstore/cosign-installer
@@ -95,4 +95,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Teste de container
-        run: docker run ${{ env.REGISTRY }}/pehpaiva/advanced-cide-3:master
+        run: docker run ${{ env.REGISTRY }}/pehpaiva/advanced-cicd-3:master
